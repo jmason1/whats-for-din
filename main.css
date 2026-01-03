@@ -1,1 +1,57 @@
-* {font-size:16px;}
+/* Reset some defaults */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  padding: 1rem;
+  background-color: #fdfdfd;
+  color: #333;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Recipe container */
+#app {
+  display: grid;
+  grid-template-columns: 1fr; /* start single column for mobile */
+  gap: 1rem;
+}
+
+/* Individual recipe card */
+.recipe-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Mobile → tablet/desktop scaling */
+@media (min-width: 600px) {
+  #app {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  #app {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,1 +1,22 @@
-
+[
+  {
+    "id": "spaghetti_bolognese",
+    "name": "Spaghetti Bolognese",
+    "cuisine": ["Italian"],
+    "prepTime": "medium",
+    "cookTime": "long",
+    "ingredients": [
+      { "item": "spaghetti", "qty": "400g" },
+      { "item": "minced beef", "qty": "500g" },
+      { "item": "onion", "qty": "1, chopped" },
+      { "item": "carrot", "qty": "1, diced" },
+      { "item": "celery stick", "qty": "1, diced" },
+      { "item": "tomato paste", "qty": "2 tbsp" },
+      { "item": "canned tomatoes", "qty": "400g" },
+      { "item": "olive oil", "qty": "2 tbsp" },
+      { "item": "salt & pepper", "qty": "to taste" }
+    ],
+    "method": "1. Heat olive oil, fry onion, carrot, celery until soft.\n2. Add minced beef and cook until browned.\n3. Stir in tomato paste and canned tomatoes.\n4. Simmer gently for 45 minutes. Season to taste.\n5. Serve over cooked spaghetti.",
+    "tags": ["classic", "family", "comfort-food"]
+  }
+]

@@ -1,0 +1,9 @@
+To update, paste the following in Terminal:
+
+1// cd ~/Library/Mobile\ Documents/com~apple~CloudDocs/Recipes/whats-for-dinner
+
+2// git add . && git commit -m "Auto-sync $(date '+%Y-%m-%d %H:%M:%S')" && git push
+
+3// git status
+
+4// git add . && git commit -m "Auto-sync $(date '+%Y-%m-%d %H:%M:%S')" && git push
