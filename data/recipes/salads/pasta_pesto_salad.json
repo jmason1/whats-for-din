@@ -1,0 +1,39 @@
+{
+  "id": "pasta_pesto_salad",
+  "name": "Pasta & Pesto Salad",
+  "subRecipes": [
+    { "recipeId": "pesto_sauce", "multiplier": 1 }
+  ],
+  "ingredients": [
+    { "ingredientId": "pasta", "totalQty": 300 },
+    { "ingredientId": "cherry_tomatoes", "totalQty": 200 },
+    { "ingredientId": "mozzarella", "totalQty": 150 },
+    { "ingredientId": "rocket", "totalQty": 50 }
+  ],
+  "steps": [
+    {
+      "order": 1,
+      "text": "Cook the pasta until al dente.",
+      "uses": [
+        { "ingredientId": "pasta", "qty": 300 }
+      ]
+    },
+    {
+      "order": 2,
+      "text": "Prepare the pesto sauce.",
+      "usesSubRecipe": {
+        "recipeId": "pesto_sauce",
+        "multiplier": 1
+      }
+    },
+    {
+      "order": 3,
+      "text": "Combine pasta, pesto, tomatoes, mozzarella, and rocket.",
+      "uses": [
+        { "ingredientId": "cherry_tomatoes", "qty": 200 },
+        { "ingredientId": "mozzarella", "qty": 150 },
+        { "ingredientId": "rocket", "qty": 50 }
+      ]
+    }
+  ]
+}

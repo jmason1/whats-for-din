@@ -1,57 +1,92 @@
-/* Reset some defaults */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* Body */
 body {
   font-family: system-ui, sans-serif;
-  line-height: 1.6;
   padding: 1rem;
-  background-color: #fdfdfd;
-  color: #333;
+  line-height: 1.6;
 }
 
-/* Header */
 header {
-  text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-/* Recipe container */
 #app {
   display: grid;
-  grid-template-columns: 1fr; /* start single column for mobile */
   gap: 1rem;
 }
 
-/* Individual recipe card */
 .recipe-card {
-  background: #fff;
+  border: 1px solid #ddd;
   border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   padding: 1rem;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  margin-top: 2rem;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-/* Mobile → tablet/desktop scaling */
-@media (min-width: 600px) {
+@media (min-width: 700px) {
   #app {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (min-width: 900px) {
-  #app {
-    grid-template-columns: repeat(3, 1fr);
+
+
+
+/* RECIPE RENDERING */
+.method {
+  list-style: decimal;
+  padding-left: 1.2rem;
+}
+
+.method-step {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.step-uses {
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.step-uses ul {
+  padding-left: 1rem;
+}
+
+.step-text {
+  font-weight: 500;
+}
+
+.no-uses {
+  color: #aaa;
+}
+
+/* Mobile: stack columns */
+@media (max-width: 600px) {
+  .method-step {
+    grid-template-columns: 1fr;
   }
+
+  .step-uses {
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.sub-method {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  border-left: 2px solid #eee;
+  padding-left: 1rem;
+}
+
+.sub-step {
+  opacity: 0.95;
+}
+
+.sub-method .method-step {
+  grid-template-columns: 1fr 2fr;
 }

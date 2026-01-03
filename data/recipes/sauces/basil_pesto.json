@@ -1,0 +1,22 @@
+{
+  "id": "pesto_sauce",
+  "name": "Pesto sauce",
+  "ingredients": [
+    { "ingredientId": "basil", "totalQty": 40 },
+    { "ingredientId": "pine_nuts", "totalQty": 30 },
+    { "ingredientId": "parmesan", "totalQty": 50 },
+    { "ingredientId": "olive_oil", "totalQty": 4 }
+  ],
+  "steps": [
+    {
+      "order": 1,
+      "text": "Blend all ingredients until smooth.",
+      "uses": [
+        { "ingredientId": "basil", "qty": 40 },
+        { "ingredientId": "pine_nuts", "qty": 30 },
+        { "ingredientId": "parmesan", "qty": 50 },
+        { "ingredientId": "olive_oil", "qty": 4 }
+      ]
+    }
+  ]
+}

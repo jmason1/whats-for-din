@@ -1,0 +1,32 @@
+[
+  {
+    "id": "pesto_sauce",
+    "name": "Pesto sauce",
+    "category": "sauces",
+    "prepTime": "quick",
+    "cookTime": "none",
+    "file": "data/recipes/sauces/basil_pesto.json",
+    "tags": ["vegetarian"]
+  },
+  
+  {
+    "id": "pasta_pesto_salad",
+    "name": "Pasta & pesto salad",
+    "category": "mains",
+    "prepTime": "medium",
+    "cookTime": "quick",
+    "file": "data/recipes/salads/pasta_pesto_salad.json",
+    "tags": ["vegetarian", "summer"]
+  },
+  
+  
+  {
+    "id": "braised_red_cabbage",
+    "name": "Braised red cabbage",
+    "category": "side-dishes",
+    "prepTime": "medium",
+    "cookTime": "quick",
+    "file": "data/recipes/side-dishes/braised-red-cabbage.json",
+    "tags": ["vegetarian", "christmas"]
+  }
+]

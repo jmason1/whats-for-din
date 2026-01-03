@@ -1,0 +1,65 @@
+{
+  "id": "braised_red_cabbage",
+  "default_quantity": 8,  
+  "oven_setting": "150C convection",
+  "prep_time": "0:15",
+  "cook_time": "2:30", 
+    
+  "appliances": "Oven, food processor",
+  "name": "Braised red cabbage",
+  "ingredients": [
+    { "ingredientId": "cabbage_red", "totalQty": 0.5 },
+    { "ingredientId": "onion_white", "totalQty": 1 },
+    { "ingredientId": "apple", "totalQty": 1 },
+    { "ingredientId": "garlic", "totalQty": 1 },
+    { "ingredientId": "nutmeg", "totalQty": 0.12 },
+    { "ingredientId": "cinnamon_ground", "totalQty": 0.12 },
+    { "ingredientId": "cloves_ground", "totalQty": 0.12 },
+    { "ingredientId": "sugar_brown", "totalQty": 30 },
+    { "ingredientId": "vinegar_cider", "totalQty": 1.5 },
+    { "ingredientId": "butter_unsalted", "totalQty": 10 },
+    { "ingredientId": "salt", "totalQty": 1 },
+    { "ingredientId": "pepper_black", "totalQty": 1 }
+  ],
+  "steps": [
+      
+    {
+      "order": 1,
+      "text": "In a large casserole dish, arrange ⅓ of the cabbage, season with S&P, then a layer of ⅓ of all other ingredients (except for the butter and vinegar)",
+      "uses": [
+        { "ingredientId": "cabbage_red", "qty": 0.33 }
+      ]
+    },
+      
+    {
+      "order": 2,
+      "text": "Repeat two more times until all ingredients are layered.",
+      "uses": [
+        { "ingredientId": "cabbage_red", "qty": 0.66 }
+      ]
+    },
+      
+    {
+      "order": 3,
+      "text": "Pour in the vinegar, and dot the cubed butter around the top.",
+      "uses": [
+        { "ingredientId": "vinegar_cider", "qty": 1 },
+        { "ingredientId": "butter_unsalted", "qty": 10 }
+      ]
+    },
+      
+    {
+      "order": 4,
+      "text": "Put in the oven for 2 - 2.5 hours, mixing every hour.",
+      "uses": [
+      ]
+    },
+      
+    {
+      "order": 5,
+      "text": "Reheat for at least 30mins on Christmas day, until steaming hot.",
+      "uses": [
+      ]
+    } 
+  ]
+}
