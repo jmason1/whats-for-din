@@ -1,7 +1,7 @@
 header {padding:0 40px;}
 
 #Ingredients {
-    border-radius:50px;
+    border-radius:40px;
     background-color:#f7f4f2;
     padding:40px;
     display:flex;flex-direction:column;
@@ -16,7 +16,7 @@ header {padding:0 40px;}
 }
 
 .ingredient-item {
-    background-color:#FFF;width:calc(50% - 5px);border-radius:10px;
+    background-color:#FFF;width:calc(50% - 5px);border-radius:10px;min-height:60px;
     /* OLD */
     display: flex;
     justify-content: space-between;
@@ -26,10 +26,13 @@ header {padding:0 40px;}
     transition: background 0.2s ease, opacity 0.2s ease;
     padding:10px;
 }
-@media (max-width:549px) {
+@media (max-width:600px) {
     .ingredient-item {width:100%;}
 }
 
+.ingName {display:flex;flex-direction:column;line-height: 1.25;}
+.ingTitle {font-weight:400;}
+.ingNote {font-size:14px;}
 
 
 .ingredient-item:hover {

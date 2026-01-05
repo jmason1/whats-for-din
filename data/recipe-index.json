@@ -19,6 +19,16 @@
     "tags": ["vegetarian", "summer"]
   },
   
+  {
+    "id": "zucchini_risoni",
+    "name": "Zucchini risoni",
+    "category": "mains",
+    "prepTime": "medium",
+    "cookTime": "quick",
+    "file": "data/recipes/pasta/zucchini-risoni.json",
+    "tags": ["vegetarian", "summer"]
+  },
+  
   
   {
     "id": "braised_red_cabbage",

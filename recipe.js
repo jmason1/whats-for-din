@@ -72,13 +72,17 @@ function renderIngredientGroup(recipe, ingredientMap) {
     <div class="ingredient-list">
       ${recipe.ingredients.map(i => {
         const ing = ingredientMap[i.ingredientId];
+
         return `
           <div
             class="ingredient-item"
             data-ingredient-id="${i.ingredientId}"
             onclick="this.classList.toggle('checked')"
           >
-            <span class="ingredient-name">${ing.name}</span>
+            <div class="ingName">
+              <span class="ingTitle">${ing.name}</span>
+              ${i.ingNote ? `<span class="ingNote">${i.ingNote}</span>` : ''}
+            </div>
             <span class="ingredient-qty">${i.totalQty} ${ing.units}</span>
           </div>
         `;

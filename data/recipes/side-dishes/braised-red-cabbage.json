@@ -18,8 +18,6 @@
     { "ingredientId": "sugar_brown", "totalQty": 30 },
     { "ingredientId": "vinegar_cider", "totalQty": 1.5 },
     { "ingredientId": "butter_unsalted", "totalQty": 10 },
-    { "ingredientId": "salt", "totalQty": 1 },
-    { "ingredientId": "pepper_black", "totalQty": 1 }
   ],
   "steps": [
       
