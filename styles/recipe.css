@@ -1,0 +1,93 @@
+header {padding:0 40px;}
+
+#Ingredients {
+    border-radius:50px;
+    background-color:#f7f4f2;
+    padding:40px;
+    display:flex;flex-direction:column;
+}
+
+#ingredient-groups {
+    display:flex;flex-direction:row;flex-wrap:wrap;gap:10px;width:100%;
+}
+
+.ingredient-list {
+    display:flex;flex-direction:row;flex-wrap:wrap;gap:10px;width:100%;
+}
+
+.ingredient-item {
+    background-color:#FFF;width:calc(50% - 5px);border-radius:10px;
+    /* OLD */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    transition: background 0.2s ease, opacity 0.2s ease;
+    padding:10px;
+}
+@media (max-width:549px) {
+    .ingredient-item {width:100%;}
+}
+
+
+
+.ingredient-item:hover {
+  background: #FFFFFF75;
+}
+
+.ingredient-item.checked {
+  background: #e8f5e9;
+  opacity: 0.6;
+}
+
+
+/* -------------------- METHOD -------------------- */
+#Method {padding:0 40px;}
+
+/* RECIPE RENDERING */
+
+.method-step {
+  display: flex;
+  flex-direction:row;
+
+  margin-bottom: 25px;
+}
+
+.step-uses {
+  width:50%;border-right:2px solid #f1efec;padding-right:15px;
+    
+    /* OLD */
+      color: #444;
+}
+.step-text {
+    width:50%;padding-left:15px;
+  font-weight: 500;
+}
+
+
+.step-uses ul {
+  padding-left: 1rem;
+}
+
+
+
+.no-uses {
+  color: #aaa;
+}
+
+/* Mobile: stack columns */
+.sub-method {
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+  border-left: 2px solid #eee;
+  padding-left: 1rem;
+}
+
+.sub-step {
+  opacity: 0.95;
+}
+
+.sub-method .method-step {
+  grid-template-columns: 1fr 2fr;
+}

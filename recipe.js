@@ -2,22 +2,18 @@ const params = new URLSearchParams(window.location.search);
 const recipeId = params.get('id');
 
 async function loadRecipePage() {
-  // Load recipe index and ingredients
   const [index, ingredients] = await Promise.all([
     fetch('data/recipe-index.json').then(r => r.json()),
     fetch('data/ingredients.json').then(r => r.json())
   ]);
 
-  // Map for quick ingredient lookups
   const ingredientMap = Object.fromEntries(
     ingredients.map(i => [i.id, i])
   );
 
-  // Load main recipe
   const entry = index.find(r => r.id === recipeId);
   const recipe = await fetch(entry.file).then(r => r.json());
 
-  // Load sub-recipes (first level only)
   const subRecipes = [];
   if (recipe.subRecipes) {
     for (const sub of recipe.subRecipes) {
@@ -27,7 +23,6 @@ async function loadRecipePage() {
     }
   }
 
-  // Create map of totalQty for main recipe
   const recipeTotals = Object.fromEntries(
     recipe.ingredients.map(i => [i.ingredientId, i.totalQty])
   );
@@ -35,14 +30,22 @@ async function loadRecipePage() {
   renderRecipe(recipe, subRecipes, ingredientMap, recipeTotals);
 }
 
+/* ---------- MAIN RENDER ---------- */
+
 function renderRecipe(recipe, subRecipes, ingredientMap, recipeTotals) {
   document.getElementById('recipe-name').textContent = recipe.name;
-  const content = document.getElementById('recipe-content');
 
-  // Build a small info section (oven setting, prep/cook times)
-  let infoHtml = '';
+  /* ---------- INGREDIENTS ---------- */
+  const ingredientContainer = document.getElementById('ingredient-groups');
+  ingredientContainer.innerHTML = `
+    ${renderIngredientGroup(recipe, ingredientMap)}
+    ${subRecipes.map(sr => renderIngredientGroup(sr, ingredientMap)).join('')}
+  `;
+
+  /* ---------- INFO ---------- */
+  const infoContainer = document.getElementById('RecipeInfo');
   if (recipe.oven_setting || recipe.prep_time || recipe.cook_time) {
-    infoHtml = `
+    infoContainer.innerHTML = `
       <div class="recipe-info" style="margin-top:40px;">
         <ul>
           ${recipe.oven_setting ? `<li><strong>Oven:</strong> ${recipe.oven_setting}</li>` : ''}
@@ -51,37 +54,41 @@ function renderRecipe(recipe, subRecipes, ingredientMap, recipeTotals) {
         </ul>
       </div>
     `;
+  } else {
+    infoContainer.innerHTML = '';
   }
 
-  content.innerHTML = `
-    <h3>Ingredients</h3>
-    ${renderIngredientGroup(recipe, ingredientMap)}
-    ${subRecipes.map(sr => renderIngredientGroup(sr, ingredientMap)).join('')}
-
-    ${infoHtml}
-
-    <h3 style="margin-top:40px;">Method</h3>
-    <ol class="method">
-      ${renderSteps(recipe.steps, ingredientMap, subRecipes, recipeTotals)}
-    </ol>
-  `;
+  /* ---------- METHOD ---------- */
+  const methodContainer = document.getElementById('method-steps');
+  methodContainer.innerHTML =
+    renderSteps(recipe.steps, ingredientMap, subRecipes, recipeTotals);
 }
 
+/* ---------- INGREDIENTS ---------- */
 
-// Render a recipe's ingredient list with title
 function renderIngredientGroup(recipe, ingredientMap) {
   return `
     <h4>${recipe.name}</h4>
-    <ul>
+    <div class="ingredient-list">
       ${recipe.ingredients.map(i => {
         const ing = ingredientMap[i.ingredientId];
-        return `<li>${ing.name}: ${i.totalQty} ${ing.units}</li>`;
+        return `
+          <div
+            class="ingredient-item"
+            data-ingredient-id="${i.ingredientId}"
+            onclick="this.classList.toggle('checked')"
+          >
+            <span class="ingredient-name">${ing.name}</span>
+            <span class="ingredient-qty">${i.totalQty} ${ing.units}</span>
+          </div>
+        `;
       }).join('')}
-    </ul>
+    </div>
   `;
 }
 
-// Recursively render steps (handles sub-recipes)
+/* ---------- METHOD STEPS ---------- */
+
 function renderSteps(steps, ingredientMap, subRecipes, recipeTotals, isSub = false) {
   return steps.map(step => {
     let html = `
@@ -95,7 +102,6 @@ function renderSteps(steps, ingredientMap, subRecipes, recipeTotals, isSub = fal
       </li>
     `;
 
-    // Inline sub-recipe steps
     if (step.usesSubRecipe) {
       const sub = subRecipes.find(r => r.id === step.usesSubRecipe.recipeId);
       if (sub) {
@@ -115,15 +121,16 @@ function renderSteps(steps, ingredientMap, subRecipes, recipeTotals, isSub = fal
   }).join('');
 }
 
-// Render ingredients used in a single step, supports fractional qty
+/* ---------- STEP INGREDIENT USES ---------- */
+
 function renderUses(step, ingredientMap, recipeTotals) {
-  if (step.uses) {
+  if (step.uses && step.uses.length > 0) {
     return `
       <ul>
         ${step.uses.map(u => {
           const ing = ingredientMap[u.ingredientId];
           let totalQty = recipeTotals[u.ingredientId];
-          if (totalQty === undefined) totalQty = 1; // fallback
+          if (totalQty === undefined) totalQty = 1;
 
           let displayQty;
           if (u.qty <= 1) {
@@ -132,7 +139,6 @@ function renderUses(step, ingredientMap, recipeTotals) {
             displayQty = u.qty;
           }
 
-          // Preserve decimals, max 2 places
           displayQty = parseFloat(displayQty.toFixed(2));
 
           return `<li>${ing.name}: ${displayQty} ${ing.units}</li>`;
@@ -148,5 +154,6 @@ function renderUses(step, ingredientMap, recipeTotals) {
   return `<span class="no-uses">—</span>`;
 }
 
-// Start page load
+/* ---------- INIT ---------- */
+
 loadRecipePage();

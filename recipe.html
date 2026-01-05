@@ -4,7 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Recipe</title>
-  <link rel="stylesheet" href="main.css">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/recipe.css">
+  
 </head>
 <body>
 
@@ -13,7 +20,24 @@
   <h1 id="recipe-name"></h1>
 </header>
 
-<main id="recipe-content"></main>
+<main id="recipe-content">
+  
+  <!-- INFO (oven / prep / cook) -->
+  <section id="RecipeInfo"></section>
+
+  <!-- INGREDIENTS -->
+  <section id="Ingredients">
+    <h3>Ingredients</h3>
+    <div id="ingredient-groups"></div>
+  </section>
+
+  <!-- METHOD -->
+  <section id="Method">
+    <h3 style="margin-top:40px;">Method</h3>
+    <ol class="method" id="method-steps"></ol>
+  </section>
+
+</main>
 
 <script src="recipe.js"></script>
 </body>

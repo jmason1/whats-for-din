@@ -1,7 +1,7 @@
 {
   "id": "braised_red_cabbage",
   "default_quantity": 8,  
-  "oven_setting": "150C convection",
+  "oven_setting": "150°C convection",
   "prep_time": "0:15",
   "cook_time": "2:30", 
     
@@ -61,5 +61,6 @@
       "uses": [
       ]
     } 
-  ]
+  ],
+"Notes": ""
 }

@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  max-width:1200px;
+  margin:auto;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size:40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.ingredient-name {
+  font-weight: 500;
+}
+
+.ingredient-qty {
+  font-variant-numeric: tabular-nums;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+header {
+  margin-bottom: 1.5rem;
+}
+
+#app {
+  display: grid;
+  gap: 1rem;
+}
+
+.recipe-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+@media (min-width: 700px) {
+  #app {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+
+
