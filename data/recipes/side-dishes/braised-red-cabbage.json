@@ -17,7 +17,7 @@
     { "ingredientId": "cloves_ground", "totalQty": 0.12 },
     { "ingredientId": "sugar_brown", "totalQty": 30 },
     { "ingredientId": "vinegar_cider", "totalQty": 1.5 },
-    { "ingredientId": "butter_unsalted", "totalQty": 10 },
+    { "ingredientId": "butter_unsalted", "totalQty": 10 }
   ],
   "steps": [
       
