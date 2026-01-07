@@ -14,7 +14,7 @@
     { "ingredientId": "chilli_flakes", "totalQty": 1, "ingNote":"Optional" },
     { "ingredientId": "zucchini", "totalQty": 3, "ingNote":"Grated" },
     { "ingredientId": "pasta_risoni", "totalQty": 300 },
-    { "ingredientId": "stock_vegetable", "totalQty": 900 },
+    { "ingredientId": "stock_vegetable", "totalQty": 850 },
     { "ingredientId": "spinach", "totalQty": 120 },
     { "ingredientId": "lemon", "totalQty": 0.5 },
     { "ingredientId": "cheese_parmesan", "totalQty": 50, "ingNote":"Finely grated" },

@@ -4,8 +4,8 @@
   "ingredients": [
     { "ingredientId": "basil_fresh", "totalQty": 40 },
     { "ingredientId": "pine_nuts", "totalQty": 30 },
-    { "ingredientId": "parmesan", "totalQty": 50 },
-    { "ingredientId": "olive_oil", "totalQty": 4 }
+    { "ingredientId": "cheese_parmesan", "totalQty": 50 },
+    { "ingredientId": "oil_olive", "totalQty": 4 }
   ],
   "steps": [
     {
@@ -14,8 +14,8 @@
       "uses": [
         { "ingredientId": "basil_fresh", "qty": 1 },
         { "ingredientId": "pine_nuts", "qty": 1 },
-        { "ingredientId": "parmesan", "qty": 1 },
-        { "ingredientId": "olive_oil", "qty": 1 }
+        { "ingredientId": "cheese_parmesan", "qty": 1 },
+        { "ingredientId": "oil_olive", "qty": 1 }
       ]
     }
   ]

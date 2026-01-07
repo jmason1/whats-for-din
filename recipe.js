@@ -97,6 +97,7 @@ function renderSteps(steps, ingredientMap, subRecipes, recipeTotals, isSub = fal
   return steps.map(step => {
     let html = `
       <li class="method-step ${isSub ? 'sub-step' : ''}">
+      <h4>Step X</h4>
         <div class="step-uses">
           ${renderUses(step, ingredientMap, recipeTotals)}
         </div>

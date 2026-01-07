@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  transition:0.2s ease-out;
 }
 
 
@@ -13,7 +14,7 @@ body {
   font-weight: 300;
   font-size:16px;
   font-style: normal;
-  padding: 1rem;
+  padding: 20px;
   line-height: 1.5;
 }
 
