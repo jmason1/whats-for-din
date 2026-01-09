@@ -1,17 +1,53 @@
-header {padding:0 40px;}
-
-#Ingredients {
-    border-radius:40px;
-    background-color:#f7f4f2;
-    padding:40px;
-    display:flex;flex-direction:column;
+header {padding:40px 40px 0 40px;}
+@media (max-width:767px) {
+  header {padding:20px 20px 0 20px;}
 }
+
+
+/* SUMMARY */
+.recipe-info {padding:40px;}
+.recipe-info ul {display:flex;flex-direction:row;gap:10px;}
+.recipe-info li {background-color:#24948a20; border-radius:10px;
+  width:25%;
+}
+
+
+/* INGREDIENTS */
+#Ingredients {
+  border-radius:40px;
+  background-color:#f7f4f2;
+  padding:34px 40px 40px 40px;
+  display:flex;flex-direction:column;
+  position:relative;
+}
+
+.scale-controls {
+  position:absolute;top:40px;right:40px;
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.scale-controls button {
+  height:40px;width:40px;display:flex;justify-content:center;align-items: center;
+  border: 1px solid #ccc;
+  background: #FFF;
+  cursor: pointer;
+  opacity:0.5;
+  font-weight:600;font-size:18px;border-radius:10px;
+}
+.scale-controls button:hover {opacity:0.75}
+.scale-controls button.active {
+  background: #FFF;
+  opacity:1;
+}
+
 
 #ingredient-groups {
     display:flex;flex-direction:row;flex-wrap:wrap;gap:10px;width:100%;
 }
 
-#ingredient-groups h4 {padding-bottom:5px;width:100%;border-bottom:2px solid #eae8e6;}
+#ingredient-groups h3 {padding-bottom:5px;width:100%;border-bottom:2px solid #eae8e6;}
 
 .ingredient-list {
     display:flex;flex-direction:row;flex-wrap:wrap;gap:10px;width:100%;
@@ -45,8 +81,9 @@ header {padding:0 40px;}
   text-decoration: line-through;
 }
 
-@media (max-width:600px) {
+@media (max-width:767px) {
   #Ingredients {border-radius:20px;padding:20px;}
+  .scale-controls {top:20px;right:20px;}
   .ingredient-item {width:100%;}
 }
 
@@ -65,7 +102,7 @@ header {padding:0 40px;}
   margin-bottom: 25px;
 }
 
-.method-step h4 {width:100%;padding-bottom:5px;}
+.method-step h3 {width:100%;padding-bottom:5px;}
 
 .step-uses {
   width:50%;border-right:2px solid #f1efec;padding-right:15px;
@@ -105,6 +142,34 @@ header {padding:0 40px;}
   grid-template-columns: 1fr 2fr;
 }
 
-@media (max-width:600px) {
+@media (max-width:767px) {
   #Method {padding:30px 20px 20px 20px;}
 }
+
+
+/* GENERATED, TO SORT */
+.method {
+  counter-reset: step;
+  list-style: none;
+  padding-left: 0;
+}
+
+.method > li {
+  counter-increment: step;
+  margin-bottom: 1.5rem;
+}
+
+.method > li::before {
+  width:100%;
+  content: "Step " counter(step);
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.sub-method > li::before {
+  content: "Sub-step " counter(step);
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+

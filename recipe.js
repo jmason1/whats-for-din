@@ -1,33 +1,76 @@
 const params = new URLSearchParams(window.location.search);
 const recipeId = params.get('id');
 
+/* ---------- SCALING STATE ---------- */
+
+let currentScale = 1;
+let currentRecipe = null;
+let currentSubRecipes = [];
+let currentIngredientMap = {};
+let baseRecipeTotals = {};
+
+/* ---------- LOAD ---------- */
+
 async function loadRecipePage() {
   const [index, ingredients] = await Promise.all([
     fetch('data/recipe-index.json').then(r => r.json()),
     fetch('data/ingredients.json').then(r => r.json())
   ]);
 
-  const ingredientMap = Object.fromEntries(
+  currentIngredientMap = Object.fromEntries(
     ingredients.map(i => [i.id, i])
   );
 
   const entry = index.find(r => r.id === recipeId);
-  const recipe = await fetch(entry.file).then(r => r.json());
+  currentRecipe = await fetch(entry.file).then(r => r.json());
 
-  const subRecipes = [];
-  if (recipe.subRecipes) {
-    for (const sub of recipe.subRecipes) {
+  currentSubRecipes = [];
+  if (currentRecipe.subRecipes) {
+    for (const sub of currentRecipe.subRecipes) {
       const subEntry = index.find(r => r.id === sub.recipeId);
       const subRecipe = await fetch(subEntry.file).then(r => r.json());
-      subRecipes.push(subRecipe);
+      currentSubRecipes.push(subRecipe);
     }
   }
 
-  const recipeTotals = Object.fromEntries(
-    recipe.ingredients.map(i => [i.ingredientId, i.totalQty])
+  baseRecipeTotals = Object.fromEntries(
+    currentRecipe.ingredients.map(i => [i.ingredientId, i.totalQty])
   );
 
-  renderRecipe(recipe, subRecipes, ingredientMap, recipeTotals);
+  setupScaleControls();
+  renderRecipe(
+    currentRecipe,
+    currentSubRecipes,
+    currentIngredientMap,
+    baseRecipeTotals
+  );
+}
+
+/* ---------- SCALE HELPERS ---------- */
+
+function scaleQty(value) {
+  return +(value * currentScale).toFixed(2);
+}
+
+function setupScaleControls() {
+  const buttons = document.querySelectorAll('.scale-controls button');
+  if (!buttons.length) return;
+
+  buttons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      currentScale = parseFloat(btn.dataset.scale);
+
+      buttons.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      renderRecipe(
+        currentRecipe,
+        currentSubRecipes,
+        currentIngredientMap,
+        baseRecipeTotals
+      );
+    });
+  });
 }
 
 /* ---------- MAIN RENDER ---------- */
@@ -46,7 +89,7 @@ function renderRecipe(recipe, subRecipes, ingredientMap, recipeTotals) {
   const infoContainer = document.getElementById('RecipeInfo');
   if (recipe.oven_setting || recipe.prep_time || recipe.cook_time) {
     infoContainer.innerHTML = `
-      <div class="recipe-info" style="margin-top:40px;">
+      <div class="recipe-info">
         <ul>
           ${recipe.oven_setting ? `<li><strong>Oven:</strong> ${recipe.oven_setting}</li>` : ''}
           ${recipe.prep_time ? `<li><strong>Prep time:</strong> ${recipe.prep_time}</li>` : ''}
@@ -68,10 +111,11 @@ function renderRecipe(recipe, subRecipes, ingredientMap, recipeTotals) {
 
 function renderIngredientGroup(recipe, ingredientMap) {
   return `
-    <h4>${recipe.name}</h4>
+    <h3>${recipe.name}</h3>
     <div class="ingredient-list">
       ${recipe.ingredients.map(i => {
         const ing = ingredientMap[i.ingredientId];
+        const scaledTotal = scaleQty(i.totalQty);
 
         return `
           <div
@@ -83,7 +127,7 @@ function renderIngredientGroup(recipe, ingredientMap) {
               <span class="ingTitle">${ing.name}</span>
               ${i.ingNote ? `<span class="ingNote">${i.ingNote}</span>` : ''}
             </div>
-            <span class="ingredient-qty">${i.totalQty} ${ing.units}</span>
+            <span class="ingredient-qty">${scaledTotal} ${ing.units}</span>
           </div>
         `;
       }).join('')}
@@ -97,7 +141,6 @@ function renderSteps(steps, ingredientMap, subRecipes, recipeTotals, isSub = fal
   return steps.map(step => {
     let html = `
       <li class="method-step ${isSub ? 'sub-step' : ''}">
-      <h4>Step X</h4>
         <div class="step-uses">
           ${renderUses(step, ingredientMap, recipeTotals)}
         </div>
@@ -134,19 +177,19 @@ function renderUses(step, ingredientMap, recipeTotals) {
       <ul>
         ${step.uses.map(u => {
           const ing = ingredientMap[u.ingredientId];
-          let totalQty = recipeTotals[u.ingredientId];
-          if (totalQty === undefined) totalQty = 1;
+          let baseTotal = recipeTotals[u.ingredientId];
+          if (baseTotal === undefined) baseTotal = 1;
 
-          let displayQty;
+          let amount;
           if (u.qty <= 1) {
-            displayQty = u.qty * totalQty;
+            amount = baseTotal * u.qty;
           } else {
-            displayQty = u.qty;
+            amount = u.qty;
           }
 
-          displayQty = parseFloat(displayQty.toFixed(2));
+          amount = scaleQty(amount);
 
-          return `<li>${ing.name}: ${displayQty} ${ing.units}</li>`;
+          return `<li>${ing.name}: ${amount} ${ing.units}</li>`;
         }).join('')}
       </ul>
     `;

@@ -6,7 +6,9 @@
     "prepTime": "quick",
     "cookTime": "none",
     "file": "data/recipes/sauces/basil_pesto.json",
-    "tags": ["vegetarian"]
+    "tags": ["vegetarian"],
+    "price":"$",
+    "Taff rating":3
   },
   
   {
