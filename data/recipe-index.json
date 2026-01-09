@@ -1,0 +1,87 @@
+[
+  
+
+
+  
+  {
+    "id": "basil_pesto",
+    "name": "Basil pesto",
+    "file": "data/recipes/sauces/basil_pesto.json",
+    "category": "Pasta",
+    "main": true,
+    "prepTime": "Quick",
+    "cookTime": "Quick",
+    "leftovers": true,
+    "servings": 4,
+    "seasonal":["Spring","Summer","Autumn","Winter"],
+    "dietary": ["Vegetarian"],
+    "price":"$",
+    "taffRating":3,
+    "lastCooked": "2026-01-01"
+  },
+  
+  
+  
+  {
+    "id": "zucchini_risoni",
+    "name": "Zucchini risoni",
+    "file": "data/recipes/pasta/zucchini-risoni.json",
+    "category": "Pasta",
+    "main": true,
+    "prepTime": "Quick",
+    "cookTime": "Quick",
+    "leftovers": true,
+    "servings": 4,
+    "seasonal":["Spring","Summer","Autumn","Winter"],
+    "dietary": ["Vegetarian"],
+    "price":"$",
+    "taffRating":5,
+    "lastCooked": "2026-01-01"
+  },
+
+  
+  {
+    "id": "braised_red_cabbage",
+    "name": "Braised red cabbage",
+    "file": "data/recipes/roast/braised-red-cabbage.json",
+    "category": "Roast",
+    "main": false,
+    "prepTime": "Medium",
+    "cookTime": "Slow",
+    "leftovers": true,
+    "servings": 8,
+    "seasonal":["Autumn","Winter","Christmas"],
+    "dietary": ["Vegetarian"],
+    "price":"$",
+    "taffRating":4,
+    "lastCooked": "2025-12-25"
+  },
+  
+  
+  
+  {
+    "id": "pesto_pasta_salad",
+    "name": "Pesto pasta salad",
+    "file": "data/recipes/salads/pesto_pasta_salad.json",
+    "category": "Salads",
+    "main": true,
+    "prepTime": "Medium",
+    "cookTime": "Quick",
+    "leftovers": true,
+    "servings": 4,
+    "seasonal":["Spring","Summer","Autumn","Winter"],
+    "dietary": ["Vegetarian"],
+    "price":"$",
+    "taffRating":3,
+    "lastCooked": "2026-01-01"
+  }
+  
+  
+  
+  
+  
+
+  
+  
+
+]
