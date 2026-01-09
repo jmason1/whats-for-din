@@ -58,11 +58,15 @@ header {
 }
 
 #app {
-  display: grid;
-  gap: 1rem;
+  display: flex;
+  flex-wrap:wrap;
+  gap: 20px;
 }
 
+#app h2 {width:100%;}
+
 .recipe-card {
+  width:calc(50% - 10px);
   border: 1px solid #ddd;
   border-radius: 8px;
   padding: 1rem;

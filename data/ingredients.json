@@ -28,7 +28,7 @@
   { "id": "pepper_black", "name": "Black pepper", "units": "tsp", "group": "seasoning" },
   
   
-  { "id": "basil_fresh", "name": "Fresh basil", "units": "bunch", "group": "herbs-and-spices" },
+  { "id": "basil_fresh", "name": "Fresh basil", "units": "bunch(es)", "group": "herbs-and-spices" },
   { "id": "chilli_flakes", "name": "Chilli Flakes", "units": "tsp", "group": "herbs-and-spices" },
   { "id": "cinnamon_ground", "name": "Ground cinnamon", "units": "tsp", "group": "herbs-and-spices" },
   { "id": "cloves_ground", "name": "Ground cloves", "units": "tsp", "group": "herbs-and-spices" },

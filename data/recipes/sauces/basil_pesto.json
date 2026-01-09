@@ -1,11 +1,12 @@
 {
-  "id": "pesto_sauce",
+  "id": "basil_pesto",
   "name": "Pesto sauce",
   "ingredients": [
-    { "ingredientId": "basil_fresh", "totalQty": 40 },
-    { "ingredientId": "pine_nuts", "totalQty": 30 },
-    { "ingredientId": "cheese_parmesan", "totalQty": 50 },
-    { "ingredientId": "oil_olive", "totalQty": 4 }
+    { "ingredientId": "basil_fresh", "totalQty": 2 },
+    { "ingredientId": "pine_nuts", "totalQty": 50, "ingNote":"1/3 cup approx." },
+    { "ingredientId": "garlic", "totalQty": 3 },
+    { "ingredientId": "oil_olive", "totalQty": 125, "ingNote":"1/2 cup = 125 ml" },
+    { "ingredientId": "cheese_parmesan", "totalQty": 50 }
   ],
   "steps": [
     {
@@ -14,6 +15,7 @@
       "uses": [
         { "ingredientId": "basil_fresh", "qty": 1 },
         { "ingredientId": "pine_nuts", "qty": 1 },
+        { "ingredientId": "garlic", "qty": 3 },
         { "ingredientId": "cheese_parmesan", "qty": 1 },
         { "ingredientId": "oil_olive", "qty": 1 }
       ]

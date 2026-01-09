@@ -1,44 +1,87 @@
 [
-  {
-    "id": "pesto_sauce",
-    "name": "Pesto sauce",
-    "category": "sauces",
-    "prepTime": "quick",
-    "cookTime": "none",
-    "file": "data/recipes/sauces/basil_pesto.json",
-    "tags": ["vegetarian"],
-    "price":"$",
-    "Taff rating":3
-  },
+  
+
+
   
   {
-    "id": "pasta_pesto_salad",
-    "name": "Pasta & pesto salad",
-    "category": "mains",
-    "prepTime": "medium",
-    "cookTime": "quick",
-    "file": "data/recipes/salads/pasta_pesto_salad.json",
-    "tags": ["vegetarian", "summer"]
+    "id": "basil_pesto",
+    "name": "Basil pesto",
+    "file": "data/recipes/sauces/basil_pesto.json",
+    "category": "Pasta",
+    "main": true,
+    "prepTime": "Quick",
+    "cookTime": "Quick",
+    "leftovers": true,
+    "servings": 4,
+    "seasonal":["Spring","Summer","Autumn","Winter"],
+    "dietary": ["Vegetarian"],
+    "price":"$",
+    "taffRating":3,
+    "lastCooked": "2026-01-01"
   },
+  
+  
   
   {
     "id": "zucchini_risoni",
     "name": "Zucchini risoni",
-    "category": "mains",
-    "prepTime": "medium",
-    "cookTime": "quick",
     "file": "data/recipes/pasta/zucchini-risoni.json",
-    "tags": ["vegetarian", "summer"]
+    "category": "Pasta",
+    "main": true,
+    "prepTime": "Quick",
+    "cookTime": "Quick",
+    "leftovers": true,
+    "servings": 4,
+    "seasonal":["Spring","Summer","Autumn","Winter"],
+    "dietary": ["Vegetarian"],
+    "price":"$",
+    "taffRating":5,
+    "lastCooked": "2026-01-01"
   },
-  
+
   
   {
     "id": "braised_red_cabbage",
     "name": "Braised red cabbage",
-    "category": "side-dishes",
-    "prepTime": "medium",
-    "cookTime": "quick",
-    "file": "data/recipes/side-dishes/braised-red-cabbage.json",
-    "tags": ["vegetarian", "christmas"]
+    "file": "data/recipes/roast/braised-red-cabbage.json",
+    "category": "Roast",
+    "main": false,
+    "prepTime": "Medium",
+    "cookTime": "Slow",
+    "leftovers": true,
+    "servings": 8,
+    "seasonal":["Autumn","Winter","Christmas"],
+    "dietary": ["Vegetarian"],
+    "price":"$",
+    "taffRating":4,
+    "lastCooked": "2025-12-25"
+  },
+  
+  
+  
+  {
+    "id": "pesto_pasta_salad",
+    "name": "Pesto pasta salad",
+    "file": "data/recipes/salads/pesto_pasta_salad.json",
+    "category": "Salads",
+    "main": true,
+    "prepTime": "Medium",
+    "cookTime": "Quick",
+    "leftovers": true,
+    "servings": 4,
+    "seasonal":["Spring","Summer","Autumn","Winter"],
+    "dietary": ["Vegetarian"],
+    "price":"$",
+    "taffRating":3,
+    "lastCooked": "2026-01-01"
   }
+  
+  
+  
+  
+  
+
+  
+  
+
 ]
