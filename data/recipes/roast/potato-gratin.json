@@ -3,75 +3,59 @@
   "default_quantity": 4,  
   "oven_setting": "170°C convection",
   "prep_time": "0:20",
-  "cook_time": "0:15", 
+  "cook_time": "1:30", 
   "original_recipe": "https://theplantbasedschool.com/lemon-orzo-with-zucchini/",
-  "appliances": "",
-  "name": "Zucchini risoni",
+  "appliances": "Food processor",
+  "name": "Potato gratin",
   "ingredients": [
-    { "ingredientId": "oil_olive", "totalQty": 60, "ingNote":"1 tbsp = 20 ml" },
-    { "ingredientId": "onion_white", "totalQty": 2, "ingNote":"Finely diced" },
+    { "ingredientId": "potato", "totalQty": 8, "ingNote":"8 - 10 depending on size" },
+    { "ingredientId": "onion_white", "totalQty": 1, "ingNote":"Thinly sliced" },
+    { "ingredientId": "cream_double", "totalQty": 500 },
+    { "ingredientId": "cheese_cheddar", "totalQty": 100, "ingNote":"Finely grated" },
     { "ingredientId": "garlic", "totalQty": 3, "ingNote":"Minced" },
-    { "ingredientId": "chilli_flakes", "totalQty": 1, "ingNote":"Optional" },
-    { "ingredientId": "zucchini", "totalQty": 3, "ingNote":"Grated" },
-    { "ingredientId": "pasta_risoni", "totalQty": 300 },
-    { "ingredientId": "stock_vegetable", "totalQty": 850 },
-    { "ingredientId": "spinach", "totalQty": 120 },
-    { "ingredientId": "lemon", "totalQty": 0.5 },
-    { "ingredientId": "cheese_parmesan", "totalQty": 50, "ingNote":"Finely grated" },
-    { "ingredientId": "butter_unsalted", "totalQty": 20 },
-    { "ingredientId": "basil_fresh", "totalQty": 0.25, "ingNote":"Optional" },
-    { "ingredientId": "mint_fresh", "totalQty": 0.25, "ingNote":"Optional" }
+    { "ingredientId": "rosemary_fresh", "totalQty": 2, "ingNote":"Finely chopped" },
+    { "ingredientId": "mustard_french", "totalQty": 1 },
+    { "ingredientId": "cheese_parmesan", "totalQty": 30, "ingNote":"Finely grated" }
   ],
   "steps": [
       
     {
       "order": 1,
-      "text": "Heat the oil, then cook the onion (diced into small pieces) for 5 minutes, with a pinch of salt.",
+      "text": "Prepare the cheese sauce. Finely grate the cheddar, mince the garlic and finely chop the rosemary. Whisk everything together in a mixing jug with the cream, mustard and salt and pepper.",
       "uses": [
-        { "ingredientId": "oil_olive", "qty": 1 },
-        { "ingredientId": "onion_white", "qty": 1 }
+    { "ingredientId": "cream_double", "qty": 1 },
+    { "ingredientId": "cheese_cheddar", "qty": 1 },
+    { "ingredientId": "garlic", "qty": 1 },
+    { "ingredientId": "rosemary_fresh", "qty": 1 },
+    { "ingredientId": "mustard_french", "qty": 1 }
       ]
     },
       
     {
       "order": 2,
-      "text": "Meanwhile, grate the zucchini with the large holes of a box grater. Add the minced garlic and chilli flakes (optional) and cook for a further 5 minutes.",
+      "text": "Peel the potatoes, and slice to 3 - 5mm using a food processor (adjust blade for thickness). Cut the onion(s) in half, and slice very thinly using the food processor (1 - 2mm)",
       "uses": [
-        { "ingredientId": "zucchini", "qty": 1 },
-        { "ingredientId": "garlic", "qty": 1 },
-        { "ingredientId": "chilli_flakes", "qty": 1 }
+        { "ingredientId": "potato", "qty": 1 },
+        { "ingredientId": "onion_white", "qty": 1 }
       ]
     },
       
     {
       "order": 3,
-      "text": "Add the risoni and toast in the pan for 1-2 minutes until slightly golden and combined. Add the vegetable stock, bring to the boil and simmer for 8 - 10 minutes, stirring occasionally.",
+      "text": "Assemble the gratin in a baking tray. A layer of potatoes, then onion, then sauce (spread to cover the whole layer). Should make at least 3 layers. Grate parmesan over the assembled gratin and bake.",
       "uses": [
-      { "ingredientId": "pasta_risoni", "qty": 1 },
-      { "ingredientId": "stock_vegetable", "qty": 1 }
+        { "ingredientId": "cheese_parmesan", "qty": 1 }
       ]
     },
       
     {
       "order": 4,
-      "text": "Roughly chop the spinach and add to the pot, stirring. Add the juice of half a lemon, also.",
+      "text": "Cover with foil when the grated parmesan browns (after about 45mins), and bake for 1 - 1:30hrs.",
       "uses": [
         { "ingredientId": "spinach", "qty": 1 },
         { "ingredientId": "lemon", "qty": 1 }
       ]
-    },
-      
-    {
-      "order": 5,
-      "text": "Once the risoni is cooked, add the parmesan and butter. Stir until melted and combined, then turn off the heat. Chop the herbs small and add them at this stage, if using.",
-      "uses": [
-        { "ingredientId": "cheese_parmesan", "qty": 1 },
-        { "ingredientId": "butter_unsalted", "qty": 1 },
-        { "ingredientId": "basil_fresh", "qty": 1},
-        { "ingredientId": "mint_fresh", "qty": 1}
-          
-      ]
-    } 
+    }
   ],
 "notes": [
   { "text": "Note 1" },

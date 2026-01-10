@@ -94,8 +94,8 @@ function renderRecipe(recipe, subRecipes, ingredientMap, recipeTotals) {
       <div class="recipe-info">
         <ul>
           ${recipe.oven_setting ? `<li class="Oven"><strong>Oven:</strong> ${recipe.oven_setting}</li>` : ''}
-          ${recipe.prep_time ? `<li class="Prep"><strong>Prep time:</strong> ${recipe.prep_time}</li>` : ''}
-          ${recipe.cook_time ? `<li class="Cook"><strong>Cook time:</strong> ${recipe.cook_time}</li>` : ''}
+          ${recipe.prep_time ? `<li class="Prep"><strong>Prep:</strong> ${recipe.prep_time}</li>` : ''}
+          ${recipe.cook_time ? `<li class="Cook"><strong>Cook:</strong> ${recipe.cook_time}</li>` : ''}
           ${recipe.default_quantity != null ? `<li class="Quantity"><strong>Serves:</strong> ${scaleQty(recipe.default_quantity)}</li>` : ''}
         </ul>
       </div>
