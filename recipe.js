@@ -44,6 +44,8 @@ async function loadRecipePage() {
     currentIngredientMap,
     baseRecipeTotals
   );
+  
+  renderNotes(currentRecipe.notes);
 }
 
 /* ---------- SCALE HELPERS ---------- */
@@ -87,13 +89,14 @@ function renderRecipe(recipe, subRecipes, ingredientMap, recipeTotals) {
 
   /* ---------- INFO ---------- */
   const infoContainer = document.getElementById('RecipeInfo');
-  if (recipe.oven_setting || recipe.prep_time || recipe.cook_time) {
+  if (recipe.oven_setting || recipe.prep_time || recipe.cook_time || recipe.default_quantity != null) {
     infoContainer.innerHTML = `
       <div class="recipe-info">
         <ul>
-          ${recipe.oven_setting ? `<li><strong>Oven:</strong> ${recipe.oven_setting}</li>` : ''}
-          ${recipe.prep_time ? `<li><strong>Prep time:</strong> ${recipe.prep_time}</li>` : ''}
-          ${recipe.cook_time ? `<li><strong>Cook time:</strong> ${recipe.cook_time}</li>` : ''}
+          ${recipe.oven_setting ? `<li class="Oven"><strong>Oven:</strong> ${recipe.oven_setting}</li>` : ''}
+          ${recipe.prep_time ? `<li class="Prep"><strong>Prep time:</strong> ${recipe.prep_time}</li>` : ''}
+          ${recipe.cook_time ? `<li class="Cook"><strong>Cook time:</strong> ${recipe.cook_time}</li>` : ''}
+          ${recipe.default_quantity != null ? `<li class="Quantity"><strong>Serves:</strong> ${scaleQty(recipe.default_quantity)}</li>` : ''}
         </ul>
       </div>
     `;
@@ -201,6 +204,23 @@ function renderUses(step, ingredientMap, recipeTotals) {
 
   return `<span class="no-uses">—</span>`;
 }
+
+
+/* NOTES */
+
+function renderNotes(notes) {
+  const notesEl = document.getElementById('notes');
+
+  if (!notes || notes.length === 0) {
+    notesEl.innerHTML = '';
+    return;
+  }
+
+  notesEl.innerHTML = notes
+    .map(n => `<li>${n.text}</li>`)
+    .join('');
+}
+
 
 /* ---------- INIT ---------- */
 

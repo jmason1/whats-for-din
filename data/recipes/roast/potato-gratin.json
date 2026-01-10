@@ -1,7 +1,7 @@
 {
-  "id": "zucchini_risoni",
+  "id": "potato_gratin",
   "default_quantity": 4,  
-  "oven_setting": "-",
+  "oven_setting": "170°C convection",
   "prep_time": "0:20",
   "cook_time": "0:15", 
   "original_recipe": "https://theplantbasedschool.com/lemon-orzo-with-zucchini/",

@@ -14,8 +14,13 @@ body {
   font-weight: 300;
   font-size:16px;
   font-style: normal;
-  padding: 20px;
+  padding: 40px 20px;
   line-height: 1.5;
+}
+
+section {margin-bottom:50px;padding:0 40px;}
+@media (max-width:767px) {
+  section {margin-bottom:50px;padding:0 20px;}
 }
 
 h1 {font-size:48px;}
@@ -25,7 +30,10 @@ h4 {font-size:18px;}
 h5 {font-size:16px;}
 
 
-ul {list-style: disc;}
+ul {
+  list-style: disc;
+  padding-left:17px;
+}
 
 
 

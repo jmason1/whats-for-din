@@ -5,8 +5,7 @@ header {padding:40px 40px 0 40px;}
 
 
 /* SUMMARY */
-.recipe-info {padding:40px;}
-.recipe-info ul {display:flex;flex-direction:row;gap:10px;}
+.recipe-info ul {padding-left:0px;display:flex;flex-direction:row;gap:10px;list-style: none;}
 .recipe-info li {background-color:#24948a20; border-radius:10px;
   width:25%;
 }
@@ -16,7 +15,7 @@ header {padding:40px 40px 0 40px;}
 #Ingredients {
   border-radius:40px;
   background-color:#f7f4f2;
-  padding:34px 40px 40px 40px;
+  padding-top:34px;padding-bottom:40px;
   display:flex;flex-direction:column;
   position:relative;
 }
@@ -82,14 +81,14 @@ header {padding:40px 40px 0 40px;}
 }
 
 @media (max-width:767px) {
-  #Ingredients {border-radius:20px;padding:20px;}
+  #Ingredients {border-radius:20px;padding-top:20px;padding-bottom:20px;}
   .scale-controls {top:20px;right:20px;}
   .ingredient-item {width:100%;}
 }
 
 
 /* -------------------- METHOD -------------------- */
-#Method {padding:60px 40px 40px 40px;}
+#Method {}
 
 
 /* RECIPE RENDERING */
@@ -104,21 +103,13 @@ header {padding:40px 40px 0 40px;}
 
 .method-step h3 {width:100%;padding-bottom:5px;}
 
-.step-uses {
-  width:50%;border-right:2px solid #f1efec;padding-right:15px;
-    
-    /* OLD */
-      color: #444;
-}
-.step-text {
-    width:50%;padding-left:15px;
-  font-weight: 500;
-}
 
 
-.step-uses ul {
-  padding-left: 1rem;
-}
+
+
+
+
+
 
 
 
@@ -128,10 +119,6 @@ header {padding:40px 40px 0 40px;}
 
 /* Mobile: stack columns */
 .sub-method {
-  margin-left: 1.5rem;
-  margin-top: 0.5rem;
-  border-left: 2px solid #eee;
-  padding-left: 1rem;
 }
 
 .sub-step {
@@ -143,29 +130,14 @@ header {padding:40px 40px 0 40px;}
 }
 
 @media (max-width:767px) {
-  #Method {padding:30px 20px 20px 20px;}
+  #Method {}
 }
 
 
 /* GENERATED, TO SORT */
-.method {
-  counter-reset: step;
-  list-style: none;
-  padding-left: 0;
-}
-
-.method > li {
-  counter-increment: step;
-  margin-bottom: 1.5rem;
-}
-
-.method > li::before {
-  width:100%;
-  content: "Step " counter(step);
-  display: block;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
-}
+.method {counter-reset:step;list-style:none;padding-left:0;}
+.method > li {counter-increment:step;margin-bottom:24px;}
+.method > li::before {width:100%;content:"Step " counter(step);display:block;font-weight:600;margin-bottom:10px;}
 
 .sub-method > li::before {
   content: "Sub-step " counter(step);
@@ -173,3 +145,27 @@ header {padding:40px 40px 0 40px;}
   opacity: 0.8;
 }
 
+@media (min-width:768px) {
+.step-uses, .step-text {width:50%;}
+.step-uses {border-right:2px solid #f1efec;padding-right:15px;}
+.step-text {padding-left:15px;font-weight:400;}}
+@media (max-width:767px) {
+.step-uses, .step-text {width:100%;}
+.step-uses ul {border-bottom:2px solid #f1efec;padding-bottom:10px;margin-bottom:10px;}
+.method > li {margin-bottom:32px;}
+}
+
+
+/* NOTES */
+#Notes {
+  border-radius:40px;
+  background-color:#eae8e6;
+  padding-top:34px;padding-bottom:40px;
+}
+@media (max-width:767px) {
+  #Notes {
+    border-radius:20px;
+    background-color:#eae8e6;
+    padding-top:20px;padding-bottom:20px;
+  }
+}
