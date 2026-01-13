@@ -90,14 +90,28 @@
     "price":"$",
     "taffRating":3,
     "lastCooked": "2026-01-01"
+  },
+  
+  
+  
+  
+  
+
+  
+  {
+    "id": "christmas_pudding",
+    "name": "Christmas pudding",
+    "file": "data/recipes/christmas/christmas_pudding.json",
+    "category": "Christmas",
+    "main": false,
+    "prepTime": "Medium",
+    "cookTime": "Slow",
+    "leftovers": true,
+    "servings": 16,
+    "seasonal":["Winter"],
+    "dietary": ["Vegetarian"],
+    "price":"$$",
+    "taffRating":5,
+    "lastCooked": "2025-12-25"
   }
-  
-  
-  
-  
-  
-
-  
-  
-
 ]

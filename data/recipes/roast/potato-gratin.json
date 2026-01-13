@@ -51,10 +51,7 @@
     {
       "order": 4,
       "text": "Cover with foil when the grated parmesan browns (after about 45mins), and bake for 1 - 1:30hrs.",
-      "uses": [
-        { "ingredientId": "spinach", "qty": 1 },
-        { "ingredientId": "lemon", "qty": 1 }
-      ]
+      "uses": [ ]
     }
   ],
 "notes": [

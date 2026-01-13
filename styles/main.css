@@ -23,6 +23,9 @@ section {margin-bottom:50px;padding:0 40px;}
   section {margin-bottom:50px;padding:0 20px;}
 }
 
+
+/* TEXT */
+
 h1 {font-size:48px;}
 h2 {font-size:24px;margin-bottom:12px;}
 h3 {font-size:20px;}
@@ -35,9 +38,17 @@ ul {
   padding-left:17px;
 }
 
+a {text-decoration: none;}
 
 
+/* PAGE SECTIONS */
 
+header {padding:20px 40px 0 40px;
+  display:flex;flex-wrap:wrap;margin-bottom:30px;
+}
+@media (max-width:767px) {
+  header {padding:20px 20px 0 20px;}
+}
 
 
 
@@ -49,43 +60,5 @@ ul {
 .ingredient-qty {
   font-variant-numeric: tabular-nums;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-header {
-  margin-bottom: 1.5rem;
-}
-
-#app {
-  display: flex;
-  flex-wrap:wrap;
-  gap: 20px;
-}
-
-#app h2 {width:100%;}
-
-.recipe-card {
-  width:calc(50% - 10px);
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 1rem;
-}
-
-@media (min-width: 700px) {
-  #app {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-
 
 

@@ -9,16 +9,18 @@
   { "id": "rocket", "name": "Rocket", "units": "g", "group": "produce" },
   
   
-  { "id": "apple", "name": "Apple", "units": "apple", "group": "fresh-produce" },
+  { "id": "apple", "name": "Apple", "units": "apple(s)", "group": "fresh-produce" },
   
   { "id": "cabbage_red", "name": "Red cabbage", "units": "head", "group": "fresh-produce" },
   { "id": "cabbage_white", "name": "White cabbage", "units": "head", "group": "fresh-produce" },
   
-  { "id": "lemon", "name": "Lemon", "units": "lemon", "group": "fresh-produce" },
+  { "id": "lemon", "name": "Lemon", "units": "lemon(s)", "group": "fresh-produce" },
   
   { "id": "onion_spring", "name": "Spring onions", "units": "bunch", "group": "fresh-produce" },
   { "id": "onion_red", "name": "Red onions", "units": "", "group": "fresh-produce" },
   { "id": "onion_white", "name": "White onions", "units": "", "group": "fresh-produce" },
+  
+  { "id": "orange", "name": "Orange", "units": "orange(s)", "group": "fresh-produce" },
   
   { "id": "potato", "name": "Potatoes", "units": "", "group": "fresh-produce" },
   
@@ -51,10 +53,25 @@
   { "id": "cheese_cheddar", "name": "Cheddar cheese", "units": "g", "group": "dairy" },
   { "id": "cheese_parmesan", "name": "Parmesan cheese", "units": "g", "group": "dairy" },
   { "id": "cream_double", "name": "Double cream", "units": "ml", "group": "dairy" },
+  { "id": "milk", "name": "Milk", "units": "ml", "group": "dairy" },
   
+  
+  { "id": "almonds_blanched", "name": "Blanched almonds", "units": "g", "group": "baking" },
+  { "id": "brandy", "name": "Brandy", "units": "ml", "group": "baking" },
+  { "id": "bread_crumbs", "name": "Bread crumbs", "units": "g", "group": "baking" },
+  { "id": "currants", "name": "Currants", "units": "g", "group": "baking" },
+  { "id": "cherries_glace", "name": "Glacé cherries", "units": "g", "group": "baking" },
+  { "id": "eggs", "name": "Eggs", "units": "egg(s)", "group": "baking" },
+  { "id": "flour", "name": "Flour", "units": "g", "group": "baking" },
+  { "id": "flour_bread", "name": "Strong bread flour", "units": "g", "group": "baking" },
+  { "id": "flour_self_raising", "name": "Self-raising flour", "units": "g", "group": "baking" },
+  { "id": "raisins", "name": "Raisins", "units": "g", "group": "baking" },
+  { "id": "suet", "name": "Suet", "units": "g", "group": "baking" },
   { "id": "sugar_brown", "name": "Brown sugar", "units": "g", "group": "baking" },
   { "id": "sugar_caster", "name": "Caster sugar", "units": "g", "group": "baking" },
+  { "id": "sultanas", "name": "Sultanas", "units": "g", "group": "baking" },
+  { "id": "treacle", "name": "Treacle", "units": "ml", "group": "baking" }
   
-  { "id": "flour", "name": "Flour", "units": "g", "group": "baking" },
-  { "id": "flour_self_raising", "name": "Self-raising flour", "units": "g", "group": "baking" }
+  
+
 ]

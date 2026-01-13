@@ -1,0 +1,68 @@
+{
+  "id": "christmas_pudding",
+  "default_quantity": 12,  
+  "oven_setting": "-",
+  "prep_time": "0:30",
+  "cook_time": "9:00", 
+  "original_recipe": "",
+  "appliances": "",
+  "name": "Christmas pudding",
+  "ingredients": [
+    { "ingredientId": "currants", "totalQty": 227 },
+    { "ingredientId": "raisins", "totalQty": 227 },
+    { "ingredientId": "sultanas", "totalQty": 227 },
+    { "ingredientId": "suet", "totalQty": 227 },
+    { "ingredientId": "bread_crumbs", "totalQty": 227, "ingNote":"Grated" },
+    { "ingredientId": "cherries_glace", "totalQty": 170 },
+    { "ingredientId": "nutmeg", "totalQty": 1, "ingNote":"0.5 - 1 tsp" },
+    { "ingredientId": "cinnamon_ground", "totalQty": 0.125, "ingNote":"Less than 0.25 tsp" },
+    { "ingredientId": "almonds_blanched", "totalQty": 57, "ingNote":"Blanched / skinned, then chopped into small pieces" },
+    { "ingredientId": "sugar_caster", "totalQty": 114 },
+    { "ingredientId": "eggs", "totalQty": 5, "ingNote":"Well-beaten" },
+    { "ingredientId": "milk", "totalQty": 280, "ingNote":"1/2 pint" },
+    { "ingredientId": "brandy", "totalQty": 71, "ingNote":"3.5 tbsp" },
+    { "ingredientId": "treacle", "totalQty": 125, "ingNote":"1/4 cup" },
+    { "ingredientId": "salt", "totalQty": 0.12, "ingNote":"Small pinch" },
+    { "ingredientId": "apple", "totalQty": 0.5, "ingNote":"Peeled, cored and diced small" },
+    { "ingredientId": "orange", "totalQty": 0.5, "ingNote":"Juice and zest" },
+    { "ingredientId": "lemon", "totalQty": 0.5, "ingNote":"Juice and zest" }
+  ],
+  "steps": [
+      
+    {
+      "order": 1,
+      "text": "Mix all of the ingredients in a large mixing bowl.",
+      "uses": [
+      ]
+    },
+      
+    {
+      "order": 2,
+      "text": "Prepare the pudding bowl(s). Grease the inside of the bowl with butter, cut a small circle of grease-proof paper and put it at the bottom of the bowl. Put the pudding mixture into the bowl(s), and level off.",
+      "uses": [
+      ]
+    },
+      
+    {
+      "order": 3,
+      "text": "Using a square of grease-proof paper (a roll-width square), fold in half, in half again, and then several more times on the diagonal, to make a narrow triangle. Cut the larger end of the triangle so that the resulting circle (when unfolded) is just larger than the pudding bowl diameter and a bit of overhang. Put the grease-proof paper circle on top and fit tightly, then add a layer of aluminium foil. After this, take a square of pudding cloth and fasten it to the top using a twine loop around the lip of the bowl. Create a handle using two more lengths of twine.",
+      "uses": [
+      ]
+    },
+      
+    {
+      "order": 4,
+      "text": "Submerge the pudding(s) in a large pot of water up to 2/3 of the bowl height, avoiding the pudding from touching the bottom of the pot using either the twine handle, or something for it to sit on. Bring the water to the boil and keep the water level topped up as it evaporates, checking every hour or so. Avoid pouring water direclty onto the pudding if possible. Steam for approximately 6 hours, then let it cool to room temperature and store in the pantry.",
+      "uses": [
+      ]
+    }
+  ],
+"notes": [
+  { "text": "1x mixture makes two puddings in 1L bowls, or one in a 2L bowl." },
+  { "text": "Use one of the mini pastry tins (upturned without the middle in) to suspend the pudding bowl in the water." },
+  { "text": "Steam for 6hrs on the day of mixing, and a further 3+ on Christmas day." },
+  { "text": "Can be frozen after its initial 6hr steaming for 1+ years." },
+  { "text": "Cut a narrow notch in a wooden spoon handle to test depth of water bath." },
+  { "text": "A 2L pudding requires more steaming - advise 7hrs in advance, and 4hrs on the day." }
+]
+}

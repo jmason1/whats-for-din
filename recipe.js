@@ -93,10 +93,10 @@ function renderRecipe(recipe, subRecipes, ingredientMap, recipeTotals) {
     infoContainer.innerHTML = `
       <div class="recipe-info">
         <ul>
-          ${recipe.oven_setting ? `<li class="Oven"><strong>Oven:</strong> ${recipe.oven_setting}</li>` : ''}
-          ${recipe.prep_time ? `<li class="Prep"><strong>Prep:</strong> ${recipe.prep_time}</li>` : ''}
-          ${recipe.cook_time ? `<li class="Cook"><strong>Cook:</strong> ${recipe.cook_time}</li>` : ''}
-          ${recipe.default_quantity != null ? `<li class="Quantity"><strong>Serves:</strong> ${scaleQty(recipe.default_quantity)}</li>` : ''}
+          ${recipe.oven_setting ? `<li class="Oven"><span class="Type">Oven:</span><span class="Res">${recipe.oven_setting}</span></li>` : ''}
+          ${recipe.prep_time ? `<li class="Prep"><span class="Type">Prep:</span><span class="Res">${recipe.prep_time}</span></li>` : ''}
+          ${recipe.cook_time ? `<li class="Cook"><span class="Type">Cook:</span><span class="Res">${recipe.cook_time}</span></li>` : ''}
+          ${recipe.default_quantity != null ? `<li class="Quantity"><span class="Type">Serves:</span><span class="Res">${scaleQty(recipe.default_quantity)}</span></li>` : ''}
         </ul>
       </div>
     `;
