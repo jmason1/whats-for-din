@@ -1,0 +1,64 @@
+{
+  "id": "silverbeet_pasta",
+  "default_quantity": 4,  
+  "oven_setting": "-",
+  "prep_time": "0:20",
+  "cook_time": "0:20", 
+  "original_recipe": "Andy Cooks",
+  "appliances": "Stick blender",
+  "name": "Silverbeet pasta",
+  "ingredients": [
+    { "ingredientId": "pasta", "totalQty": 500, "ingNote":"Suggest a short pasta shape like penne, rigatoni or conchiglie" },
+    { "ingredientId": "silverbeet", "totalQty": 1, "ingNote":"A.k.a. chard" },
+    { "ingredientId": "oil_olive", "totalQty": 80 },
+    { "ingredientId": "garlic", "totalQty": 3, "ingNote":"Minced" },
+    { "ingredientId": "chilli_flakes", "totalQty": 1, "ingNote":"Optional" },
+    { "ingredientId": "cheese_parmesan", "totalQty": 60, "ingNote":"Finely grated" }
+  ],
+  "steps": [
+      
+    {
+      "order": 1,
+      "text": "Put a pot of water on to boil, firstly. Prepare the silverbeet. Cut the leafy green parts from the white stalks, where the cut leaves no green on the stalks. Boil the greens for 4 minutes, drain, and add to a stick blender cup. Dice the stalk into very small pieces. Heat the olive oil on medium heat, and begin to fry the diced stalks.",
+      "uses": [
+        { "ingredientId": "silverbeet", "qty": 1 },
+        { "ingredientId": "oil_olive", "qty": 0.75 }
+      ]
+    },
+      
+    {
+      "order": 2,
+      "text": "After a few minutes, add the minced garlic - and chilli flakes if using - to the frying stalks. Return a pot of water to the boil to cook the pasta.",
+      "uses": [
+        { "ingredientId": "garlic", "qty": 1 },
+        { "ingredientId": "chilli_flakes", "qty": 1 }
+      ]
+    },
+      
+    {
+      "order": 3,
+      "text": "Cook the pasta al-dente per the pack instructions. In the stick blender cup (containing the silverbeat greens), add the grated parmesan, the rest of the olive oil, several cracks of salt and pepper, and a couple of cooking spoonfuls of pasta water. Blend to a sauce with a stick blender.",
+      "uses": [
+      { "ingredientId": "pasta", "qty": 1 },
+      { "ingredientId": "oil_olive", "qty": 0.25 },
+      { "ingredientId": "cheese_parmesan", "qty": 1 }
+      ]
+    },
+      
+    {
+      "order": 4,
+      "text": "Add the blended silverbeet sauce to the frying stalk, garlic and chilli, and cook for the remaining duration of the pasta cooking, adding pasta water and mixing to get the desired consistency. Be sure to taste and season accordingly - it usually needs a fair amount more salt and pepper.",
+      "uses": [
+      ]
+    },
+      
+    {
+      "order": 5,
+      "text": "Drain the pasta once it's cooked, and add to the saucepan containing the sauce, cooking for a further minute.",
+      "uses": [
+      ]
+    } 
+  ],
+"notes": [
+]
+}

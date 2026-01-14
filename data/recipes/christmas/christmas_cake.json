@@ -1,0 +1,114 @@
+{
+  "id": "christmas_cake",
+  "default_quantity": 30,  
+  "oven_setting": "150°C convection",
+  "prep_time": "0:30",
+  "cook_time": "3:30", 
+  "original_recipe": "https://www.youtube.com/watch?v=xqgtJN1RHRg",
+  "appliances": "Stand mixer",
+  "name": "Christmas cake",
+  "ingredients": [
+    { "ingredientId": "currants", "totalQty": 350 },
+    { "ingredientId": "raisins", "totalQty": 225 },
+    { "ingredientId": "sultanas", "totalQty": 225 },
+    { "ingredientId": "cherries_glace", "totalQty": 100 },
+    { "ingredientId": "lemon", "totalQty": 1, "ingNote":"Zest and juice" },
+    { "ingredientId": "orange", "totalQty": 0.5, "ingNote":"Zest, optional (see notes)" },
+    { "ingredientId": "brandy", "totalQty": 120, "ingNote":"1x = 6 tbsp. Plus more for the cake after baking." },
+    { "ingredientId": "flour", "totalQty": 350 },
+    { "ingredientId": "mixed_spice", "totalQty": 1 },
+    { "ingredientId": "cinnamon_ground", "totalQty": 1 },
+    { "ingredientId": "nutmeg", "totalQty": 0.25 },
+    { "ingredientId": "butter_spread", "totalQty": 250 },
+    { "ingredientId": "sugar_brown", "totalQty": 250 },
+    { "ingredientId": "eggs", "totalQty": 4, "ingNote":"Beaten" },
+    { "ingredientId": "jam_apricot", "totalQty": 50, "ingNote":"Smooth, no bits" },
+    { "ingredientId": "marzipan", "totalQty": 1 },
+    { "ingredientId": "fondant_icing", "totalQty": 1 }
+  ],
+  "steps": [
+    {
+      "order": 1,
+      "text": "Turn the oven on to 150°C convection. Grease and line a spring-locking cake tin with butter. Place a circle of grease-proof paper on the base, and make a collar for the circumference by folding grease-proof paper to the height of the tin.",
+      "uses": [
+      ]
+    },  
+    
+    {
+      "order": 2,
+      "text": "Mix all of the dried fruit and brandy in a large mixing bowl.",
+      "uses": [
+        { "ingredientId": "currants", "qty": 1 },
+        { "ingredientId": "raisins", "qty": 1 },
+        { "ingredientId": "sultanas", "qty": 1 },
+        { "ingredientId": "cherries_glace", "qty": 1 },
+        { "ingredientId": "lemon", "qty": 1 },
+        { "ingredientId": "orange", "qty": 1 },
+        { "ingredientId": "brandy", "qty": 1 }
+      ]
+    },
+      
+    {
+      "order": 3,
+      "text": "Sift the flour and spices into a separate bowl.",
+      "uses": [
+         { "ingredientId": "flour", "qty": 1 },
+          { "ingredientId": "mixed_spice", "qty": 1 },
+          { "ingredientId": "cinnamon_ground", "qty": 1 },
+          { "ingredientId": "nutmeg", "qty": 1 }
+      ]
+    },
+      
+    {
+      "order": 4,
+      "text": "Using the stand mixer, beat the butter spread and brown sugar together for 10 minutes on medium - high speed.",
+      "uses": [
+        { "ingredientId": "butter_spread", "qty": 1 },
+        { "ingredientId": "sugar_brown", "qty": 1 }
+      ]
+    },
+      
+    {
+      "order": 5,
+      "text": "Beat the eggs into the butter and sugar - one egg at a time - adding some flour with each egg. Stir this into the fruit and add any remaining flour and spices mix.",
+      "uses": [
+        { "ingredientId": "eggs", "qty": 1 }
+      ]
+    },
+    
+    {
+      "order": 6,
+      "text": "Bake the cake on the middle shelf of the oven for 3 - 3.5hrs, wrapping the top in aluminium foil from 2hrs (definitely from 2.5hrs) if it's baking much faster on the outside. Use a skewer to check when the cake is baked through fully. Remove from the oven and cool to room temperature, and then store in an airtight cake box until ready to ice.",
+      "uses": [
+      ]
+    },
+    
+    {
+      "order": 7,
+      "text": "Periodically feed the cake with brandy after the cake is cooled, and before icing. Poke holes (first time only) in the top of the cake, and brush 1 - 2 tablespoons of brandy over it.",
+      "uses": [
+      ]
+    },
+    
+    {
+      "order": 8,
+      "text": "Dust the work surface with icing sugar. Knead the marzipan block until workable, and roll out to a circle that will just cover the top and sides of the cake. Heat the apricot jam in a saucepan until boiling (important), then brush it on the top and sides of the cake with a pastry brush. Carefully lay the marzipan over the cake, and using a flat surface or hand, smooth the marzipan so that there are no seams, folds or lumps, cutting away any excess at a slight angle towards the cake.",
+      "uses": [
+        { "ingredientId": "jam_apricot", "qty": 1 },
+        { "ingredientId": "marzipan", "qty": 1 }
+      ]
+    },
+    {
+      "order": 9,
+      "text": "Repeat the steps for the white fondant icing; knead the icing block until workable, and roll out to the same-sized circle. Brush a small amount of brandy onto the marzipan (instead of apricot jam), and put the white icing over the top. Repeat the same smoothing and cutting-away-of-excess steps as done with the marzipan.",
+      "uses": [
+        { "ingredientId": "fondant_icing", "qty": 1 }
+      ]
+    }
+  ],
+"notes": [
+  { "text": "Use a spring-locking tin to make extraction easier. Of the two locking tins we own - taller, smaller diameter = bake for longer (more like 4hrs)." },
+  { "text": "If making at the same time as a christmas pudding, add the zest of the other half of the orange from that recipe (but not the juice)." },
+  { "text": "Bake the last weekend in November, and ice nearer to Christmas day." }
+]
+}

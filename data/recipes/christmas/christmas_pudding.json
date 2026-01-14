@@ -14,14 +14,14 @@
     { "ingredientId": "suet", "totalQty": 227 },
     { "ingredientId": "bread_crumbs", "totalQty": 227, "ingNote":"Grated" },
     { "ingredientId": "cherries_glace", "totalQty": 170 },
-    { "ingredientId": "nutmeg", "totalQty": 1, "ingNote":"0.5 - 1 tsp" },
-    { "ingredientId": "cinnamon_ground", "totalQty": 0.125, "ingNote":"Less than 0.25 tsp" },
+    { "ingredientId": "nutmeg", "totalQty": 1, "ingNote":"1x = 0.5 - 1 tsp" },
+    { "ingredientId": "cinnamon_ground", "totalQty": 0.125, "ingNote":"1x = less than 0.25 tsp" },
     { "ingredientId": "almonds_blanched", "totalQty": 57, "ingNote":"Blanched / skinned, then chopped into small pieces" },
     { "ingredientId": "sugar_caster", "totalQty": 114 },
-    { "ingredientId": "eggs", "totalQty": 5, "ingNote":"Well-beaten" },
+    { "ingredientId": "eggs", "totalQty": 5, "ingNote":"Beaten" },
     { "ingredientId": "milk", "totalQty": 280, "ingNote":"1/2 pint" },
-    { "ingredientId": "brandy", "totalQty": 71, "ingNote":"3.5 tbsp" },
-    { "ingredientId": "treacle", "totalQty": 125, "ingNote":"1/4 cup" },
+    { "ingredientId": "brandy", "totalQty": 70, "ingNote":"1x = 3.5 tbsp" },
+    { "ingredientId": "treacle", "totalQty": 125, "ingNote":"1x = 1/4 cup" },
     { "ingredientId": "salt", "totalQty": 0.12, "ingNote":"Small pinch" },
     { "ingredientId": "apple", "totalQty": 0.5, "ingNote":"Peeled, cored and diced small" },
     { "ingredientId": "orange", "totalQty": 0.5, "ingNote":"Juice and zest" },
@@ -63,6 +63,7 @@
   { "text": "Steam for 6hrs on the day of mixing, and a further 3+ on Christmas day." },
   { "text": "Can be frozen after its initial 6hr steaming for 1+ years." },
   { "text": "Cut a narrow notch in a wooden spoon handle to test depth of water bath." },
-  { "text": "A 2L pudding requires more steaming - advise 7hrs in advance, and 4hrs on the day." }
+  { "text": "A 2L pudding requires more steaming - advise 7hrs in advance, and 4hrs on the day." },
+  { "text": "Slightly more than 1 pack of cherries for 1x - the remainder of the packet will go in Christmas cake if making in tandem." }
 ]
 }

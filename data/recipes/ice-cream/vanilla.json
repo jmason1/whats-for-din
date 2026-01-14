@@ -1,0 +1,52 @@
+{
+  "id": "vanilla_ice_cream",
+  "default_quantity": 16,  
+  "oven_setting": "-",
+  "prep_time": "0:20",
+  "cook_time": "0:20", 
+  "original_recipe": "",
+  "appliances": "Ice cream churn",
+  "name": "Vanilla base",
+  "ingredients": [
+    { "ingredientId": "cream_double", "totalQty": 400, "ingNotes": "Plant cream is best" },
+    { "ingredientId": "milk", "totalQty": 400 },
+    { "ingredientId": "sugar_caster", "totalQty": 130 },
+    { "ingredientId": "salt", "totalQty": 0.5 },
+    { "ingredientId": "egg_yolks", "totalQty": 5, "ingNotes": "Beaten" },
+    { "ingredientId": "vanilla_paste", "totalQty": 2 },
+    { "ingredientId": "vanilla_extract", "totalQty": 1 }
+  ],
+  "steps": [
+      
+    {
+      "order": 1,
+      "text": "Put all ingredients into a cold pan, and gradually heat, whisking constantly.",
+      "uses": [
+      ]
+    },
+      
+    {
+      "order": 2,
+      "text": "Remove from the heat when the mixture noticeably thickens - there will be thicker custard on the base of the pan when tipped.",
+      "uses": [
+      ]
+    },
+      
+    {
+      "order": 3,
+      "text": "Pour the mixture through a sieve into a 1L measuring jug, and refrigerate for at least 4 hours until cold, preferrably overnight.",
+      "uses": [
+      ]
+    },
+      
+    {
+      "order": 4,
+      "text": "Start the ice-cream churn and slowly pour in the vanilla mixture. Churn for 20 minutes, or until the mechanism begins to skip. Decant from the churn bowl into a container and freeze for at least 2 - 3hrs before eating.",
+      "uses": [
+      ]
+    }
+  ],
+"notes": [
+  { "text": "Pour melted chocolate (melted in a bowl over boiling water) in towards the end of the churn time to make stracciatella." }
+]
+}

@@ -24,6 +24,7 @@
   
   { "id": "potato", "name": "Potatoes", "units": "", "group": "fresh-produce" },
   
+  { "id": "silverbeet", "name": "Silverbeet", "units": "bunch(es)", "group": "fresh-produce" },
   { "id": "spinach", "name": "Spinach", "units": "g", "group": "fresh-produce" },
   { "id": "zucchini", "name": "Zucchini", "units": "zucchini", "group": "fresh-produce" },
   
@@ -41,15 +42,19 @@
   { "id": "rosemary_fresh", "name": "Rosemary", "units": "spring(s)", "group": "herbs-and-spices" },
   
   
+  { "id": "jam_apricot", "name": "Apricot jam", "units": "g", "group": "pantry" },
+  
   { "id": "mustard_french", "name": "Mustard", "units": "tsp", "group": "pantry" },
   { "id": "oil_olive", "name": "Olive oil", "units": "ml", "group": "pantry" },
   { "id": "vinegar_cider", "name": "Cider vinegar", "units": "tbsp", "group": "pantry" },
   
+  { "id": "pasta", "name": "Pasta", "units": "g", "group": "pantry" },
   { "id": "pasta_risoni", "name": "Risoni", "units": "g", "group": "pantry" },
   
   { "id": "stock_vegetable", "name": "Vegetable stock", "units": "ml", "group": "pantry" },
   
   { "id": "butter_unsalted", "name": "Unsalted butter", "units": "g", "group": "dairy" },
+  { "id": "butter_spread", "name": "Butter spread", "units": "g", "group": "dairy" },
   { "id": "cheese_cheddar", "name": "Cheddar cheese", "units": "g", "group": "dairy" },
   { "id": "cheese_parmesan", "name": "Parmesan cheese", "units": "g", "group": "dairy" },
   { "id": "cream_double", "name": "Double cream", "units": "ml", "group": "dairy" },
@@ -62,15 +67,22 @@
   { "id": "currants", "name": "Currants", "units": "g", "group": "baking" },
   { "id": "cherries_glace", "name": "Glacé cherries", "units": "g", "group": "baking" },
   { "id": "eggs", "name": "Eggs", "units": "egg(s)", "group": "baking" },
+  { "id": "egg_yolks", "name": "Egg yolks", "units": "yolk(s)", "group": "baking" },
+  { "id": "egg_whites", "name": "Egg whites", "units": "white(s)", "group": "baking" },
   { "id": "flour", "name": "Flour", "units": "g", "group": "baking" },
   { "id": "flour_bread", "name": "Strong bread flour", "units": "g", "group": "baking" },
   { "id": "flour_self_raising", "name": "Self-raising flour", "units": "g", "group": "baking" },
+  { "id": "fondant_icing", "name": "Fondant icing", "units": "block(s)", "group": "baking" },
+  { "id": "mixed_spice", "name": "Mixed spice", "units": "tsp", "group": "baking" },
+  { "id": "marzipan", "name": "Marzipan", "units": "block(s)", "group": "baking" },
   { "id": "raisins", "name": "Raisins", "units": "g", "group": "baking" },
   { "id": "suet", "name": "Suet", "units": "g", "group": "baking" },
   { "id": "sugar_brown", "name": "Brown sugar", "units": "g", "group": "baking" },
   { "id": "sugar_caster", "name": "Caster sugar", "units": "g", "group": "baking" },
   { "id": "sultanas", "name": "Sultanas", "units": "g", "group": "baking" },
-  { "id": "treacle", "name": "Treacle", "units": "ml", "group": "baking" }
+  { "id": "treacle", "name": "Treacle", "units": "ml", "group": "baking" },
+  { "id": "vanilla_extract", "name": "Vanilla extract", "units": "tsp", "group": "baking" },
+  { "id": "vanilla_paste", "name": "Vanilla paste", "units": "tsp", "group": "baking" }
   
   
 

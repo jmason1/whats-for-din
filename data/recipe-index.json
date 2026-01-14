@@ -21,7 +21,22 @@
   },
   
   
-  
+  {
+    "id": "silverbeet_pasta",
+    "name": "Silverbeet pasta",
+    "file": "data/recipes/pasta/silverbeet_pasta.json",
+    "category": "Pasta",
+    "main": true,
+    "prepTime": "Quick",
+    "cookTime": "Quick",
+    "leftovers": true,
+    "servings": 4,
+    "seasonal":["Spring","Summer","Autumn","Winter"],
+    "dietary": ["Vegetarian"],
+    "price":"$",
+    "taffRating":5,
+    "lastCooked": "2026-01-01"
+  },
   {
     "id": "zucchini_risoni",
     "name": "Zucchini risoni",
@@ -38,6 +53,7 @@
     "taffRating":5,
     "lastCooked": "2026-01-01"
   },
+
 
   
   {
@@ -94,10 +110,41 @@
   
   
   
+  {
+    "id": "vanilla_ice_cream",
+    "name": "Vanilla base",
+    "file": "data/recipes/ice-cream/vanilla.json",
+    "category": "Ice cream",
+    "main": false,
+    "prepTime": "Medium",
+    "cookTime": "Slow",
+    "leftovers": true,
+    "servings": 16,
+    "seasonal":["Spring","Summer","Autumn","Winter"],
+    "dietary": ["Vegetarian"],
+    "price":"$$",
+    "taffRating":5,
+    "lastCooked": "2025-12-25"
+  },
   
   
 
-  
+  {
+    "id": "christmas_cake",
+    "name": "Christmas cake",
+    "file": "data/recipes/christmas/christmas_cake.json",
+    "category": "Christmas",
+    "main": false,
+    "prepTime": "Medium",
+    "cookTime": "Slow",
+    "leftovers": true,
+    "servings": 30,
+    "seasonal":["Winter"],
+    "dietary": ["Vegetarian"],
+    "price":"$$",
+    "taffRating":5,
+    "lastCooked": "2025-12-25"
+  },
   {
     "id": "christmas_pudding",
     "name": "Christmas pudding",

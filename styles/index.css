@@ -36,7 +36,7 @@
 
 
 #app {
-  padding:0px 40px;
+  padding:0 40px;
 }
 
 #app h2 {
@@ -54,15 +54,15 @@
   padding: 20px 10px;
 }
 
-@media (min-width: 700px) {
-  #app {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
 .category-group {  width:100%;
   flex-wrap: wrap;
   gap: 10px;
   display: flex;}
 
-
+@media (max-width:767px) {
+  #app {
+    padding:0 20px;
+  }
+  
+  .recipe-link {width:100%;}
+}
